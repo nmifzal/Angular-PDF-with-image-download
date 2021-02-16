@@ -11,7 +11,7 @@ export class PdfComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-      this.toDataURL('http://mmktnelections.com/bckend/assets/users/8608989137.jpeg',
+      this.toDataURL('https://i.imgur.com/rAsrKG7.jpg',
       function (dataUrl) {
         let fi;
         console.log('RESULT:', dataUrl)
@@ -47,15 +47,15 @@ export class PdfComponent implements OnInit {
       let canvas = document.createElement('canvas');
       let ctx = canvas.getContext('2d');
       let dataURL;
-      canvas.height = 200;
-      canvas.width = 400;
-      ctx.drawImage(image, -100, -100);
+      canvas.height = 310;
+      canvas.width = 700;
+      ctx.drawImage(image, 0, 0);
       dataURL = canvas.toDataURL(outputFormat);
       callback(dataURL);
     };
     image.src = src;
     if (image.complete || image.complete === undefined) {
-      image.src = "http://mmktnelections.com/bckend/assets/users/8608989137.jpeg";
+      image.src = "https://i.imgur.com/rAsrKG7.jpg";
       image.src = src;
     }
   }
