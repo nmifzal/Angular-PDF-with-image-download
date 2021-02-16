@@ -19,15 +19,7 @@ export class AppComponent {
   
   
    ngOnInit() {
-    this.toDataURL('http://mmktnelections.com/bckend/assets/users/8608989137.jpeg',
-        function (dataUrl) {
-          let fi;
-          console.log('RESULT:', dataUrl)
-          fi = dataUrl;
-          var myCanvas = <HTMLImageElement> document.getElementById('myImg');
-          myCanvas.src = dataUrl;
-        },''
-      )
+   
   }
 
   returnURL(){
@@ -65,25 +57,25 @@ export class AppComponent {
       };
       img.src = 'http://mmktnelections.com/bckend/assets/users/8608989137.jpeg';
   }
-   toDataURL(src, callback, outputFormat) {
-    let image = new Image();
-    image.crossOrigin = 'Anonymous';
-    image.onload = function () {
-      let canvas = document.createElement('canvas');
-      let ctx = canvas.getContext('2d');
-      let dataURL;
-      canvas.height = 700;
-      canvas.width = 1000;
-      ctx.drawImage(image, 15, 10);
-      dataURL = canvas.toDataURL(outputFormat);
-      callback(dataURL);
-    };
-    image.src = src;
-    if (image.complete || image.complete === undefined) {
-      image.src = "http://mmktnelections.com/bckend/assets/users/8608989137.jpeg";
-      image.src = src;
-    }
-  }
+  //  toDataURL(src, callback, outputFormat) {
+  //   let image = new Image();
+  //   image.crossOrigin = 'Anonymous';
+  //   image.onload = function () {
+  //     let canvas = document.createElement('canvas');
+  //     let ctx = canvas.getContext('2d');
+  //     let dataURL;
+  //     canvas.height = 700;
+  //     canvas.width = 1000;
+  //     ctx.drawImage(image, 15, 10);
+  //     dataURL = canvas.toDataURL(outputFormat);
+  //     callback(dataURL);
+  //   };
+  //   image.src = src;
+  //   if (image.complete || image.complete === undefined) {
+  //     image.src = "http://mmktnelections.com/bckend/assets/users/8608989137.jpeg";
+  //     image.src = src;
+  //   }
+  // }
 
   
   
