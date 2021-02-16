@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 ## Install Dependencies
-    run `ng serve` for installing Dependencies
+Run `npm i` for installing Dependencies
 
 ## List of Plugins used
     * HTML2CANVAS
