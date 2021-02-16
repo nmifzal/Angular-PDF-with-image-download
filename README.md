@@ -4,9 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Install Dependencies
     run `ng serve` for installing Dependencies
 
-##List of Plugins used
-    1.HTML2CANVAS
-    2.JSPDF
+## List of Plugins used
+    * HTML2CANVAS
+    * JSPDF
 
 ## Development server
 
